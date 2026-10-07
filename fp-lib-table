@@ -1,0 +1,6 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "project_lcsc_parts") (type "KiCad") (uri "${KIPRJMOD}/libraries/project_lcsc_parts.pretty") (options "") (descr ""))
+	(lib (name "wago_2601_1102") (type "KiCad") (uri "${KIPRJMOD}/libraries/LIB_2601-1102/KiCad") (options "") (descr ""))
+	(lib (name "PI3C3306UEX") (type "KiCad") (uri "${KIPRJMOD}/libraries/LIB_PI3C3306UEX/KiCad") (options "") (descr ""))
+)

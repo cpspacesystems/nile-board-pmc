@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 0.0,
+          "height": 0.85,
+          "width": 0.3
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -140,8 +146,8 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.2,
+        "min_connection": 0.2,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
@@ -203,7 +209,12 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.3,
+        0.5,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +241,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -526,7 +542,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "nile_pi_carrier.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -590,14 +606,14 @@
         },
         {
           "group_by": true,
-          "label": "Exclude from Simulation",
-          "name": "${EXCLUDE_FROM_SIM}",
+          "label": "Exclude from Position Files",
+          "name": "${EXCLUDE_FROM_POS_FILES}",
           "show": true
         },
         {
           "group_by": true,
-          "label": "Exclude from Position Files",
-          "name": "${EXCLUDE_FROM_POS_FILES}",
+          "label": "Exclude from Simulation",
+          "name": "${EXCLUDE_FROM_SIM}",
           "show": true
         },
         {
@@ -611,12 +627,114 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Price/Stock",
+          "name": "Arrow Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Part Number",
+          "name": "Arrow Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Accuracy",
+          "name": "Accuracy",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S5.1",
+          "name": "KLC_S5.1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S3.3",
+          "name": "KLC_S3.3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.1",
+          "name": "KLC_S4.1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.2_DVDD",
+          "name": "KLC_S4.2_DVDD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.2_VREG_VOUT",
+          "name": "KLC_S4.2_VREG_VOUT",
+          "show": false
         }
       ],
-      "filter_string": "",
+      "filter_string": "IC",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -661,7 +779,7 @@
         "uuid": "6981b83f-8333-411f-b27d-b24dc08c68e5"
       }
     ],
-    "used_designators": "R1-159,J1-36,U1-3,Q1-72,D1-48,#PWR1-207,C1-21,SW1-2,JP1-28,Y1,NT1,F1-25",
+    "used_designators": "J1-40,R1-186,U1-4,Q1-72,#PWR1-335,D1-59,C1-48,SW1-2,JP1-85,Y1,NT1-2,F1-31,TP1-59,IC1-25,H1-10",
     "variants": []
   },
   "sheets": [
@@ -770,88 +888,140 @@
       "solonid_mosfet23"
     ],
     [
-      "42b46ee2-bd48-4aad-88e1-2174419c8a2f",
-      "Load Cell Bank"
+      "14083917-7c15-4255-9fd6-fcbfb7ac5c5c",
+      "spi_bank"
     ],
     [
-      "f597d645-72ea-4782-947c-181927721b67",
-      "PT Bank"
+      "67ec8848-451d-4a5a-8f96-7ae049425a92",
+      "SPI Module"
     ],
     [
       "cde537bb-c97e-4e08-8399-576ddc2bd45e",
       "PWM Bank"
     ],
     [
-      "3892d133-2f3a-44fe-b9da-323d2c0fffda",
-      "SPI Chooser2"
-    ],
-    [
-      "dd17597f-e64c-4f75-9570-102d0d98e754",
-      "SPI Chooser1"
-    ],
-    [
-      "d07602e7-81c8-46f6-b167-2999a5dc4e3b",
-      "DVEC_RJ47"
-    ],
-    [
-      "d07602e7-81c8-46f6-b167-2999a5dc4e3b",
-      "DVEC_RJ47"
-    ],
-    [
-      "f77fd3f0-d0ff-4031-a190-99ca94ce0338",
+      "20d07f7c-292b-4e22-a270-13725250052d",
       "DVEC_RJ46"
     ],
     [
-      "f77fd3f0-d0ff-4031-a190-99ca94ce0338",
+      "36a2e6d3-5151-4959-8dfc-22280691f9d7",
+      "DVEC_RJ47"
+    ],
+    [
+      "b50f1ed4-6101-4db2-b7c1-5e429d929c2a",
+      "spi_chooser"
+    ],
+    [
+      "c32c7dc8-2654-4197-901c-0b982e914f9b",
+      "spi_chooser1"
+    ],
+    [
+      "f710d3bd-2d8e-4225-acc8-7f0df9b0398c",
+      "SPI Module1"
+    ],
+    [
+      "20d07f7c-292b-4e22-a270-13725250052d",
       "DVEC_RJ46"
     ],
     [
-      "0d4f80ee-c062-417e-a5a3-2172bcfc3b31",
-      "DVEC_RJ48"
+      "36a2e6d3-5151-4959-8dfc-22280691f9d7",
+      "DVEC_RJ47"
     ],
     [
-      "4f196e7d-d9ea-48ce-b64c-e7592d9aa195",
-      "DVEC_RJ49"
+      "6ff0f84d-0c7f-44bc-94d1-c4cc627369b7",
+      "SPI Module2"
     ],
     [
-      "0d4f80ee-c062-417e-a5a3-2172bcfc3b31",
-      "DVEC_RJ48"
+      "20d07f7c-292b-4e22-a270-13725250052d",
+      "DVEC_RJ46"
     ],
     [
-      "4f196e7d-d9ea-48ce-b64c-e7592d9aa195",
-      "DVEC_RJ49"
+      "36a2e6d3-5151-4959-8dfc-22280691f9d7",
+      "DVEC_RJ47"
     ],
     [
-      "66052cdc-d19e-4473-b8da-85d21c8d79f7",
-      "DVEC_RJ50"
+      "05f2738f-7574-44d3-95a7-e6573fe0163e",
+      "SPI Module3"
     ],
     [
-      "0d7ac731-13b4-42d0-8bbc-c0384c5ecfcd",
-      "DVEC_RJ51"
+      "20d07f7c-292b-4e22-a270-13725250052d",
+      "DVEC_RJ46"
     ],
     [
-      "735a1cbe-97e4-4ab1-bf63-d16749608aba",
-      "DVEC_RJ52"
+      "36a2e6d3-5151-4959-8dfc-22280691f9d7",
+      "DVEC_RJ47"
     ],
     [
-      "513b5da4-e968-4201-90c2-c33fe235ef70",
-      "DVEC_RJ53"
+      "9ad1dcc6-30c1-4493-95aa-b230a5c3bd71",
+      "SPI Module4"
     ],
     [
-      "66052cdc-d19e-4473-b8da-85d21c8d79f7",
-      "DVEC_RJ50"
+      "20d07f7c-292b-4e22-a270-13725250052d",
+      "DVEC_RJ46"
     ],
     [
-      "0d7ac731-13b4-42d0-8bbc-c0384c5ecfcd",
-      "DVEC_RJ51"
+      "36a2e6d3-5151-4959-8dfc-22280691f9d7",
+      "DVEC_RJ47"
     ],
     [
-      "735a1cbe-97e4-4ab1-bf63-d16749608aba",
-      "DVEC_RJ52"
+      "30de4f7d-2cc9-4e77-8f0d-061a384e81cd",
+      "SPI Module5"
     ],
     [
-      "513b5da4-e968-4201-90c2-c33fe235ef70",
-      "DVEC_RJ53"
+      "20d07f7c-292b-4e22-a270-13725250052d",
+      "DVEC_RJ46"
+    ],
+    [
+      "5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa",
+      "PWM Bank1"
+    ],
+    [
+      "52e7901f-a7e8-4355-bd4e-0ad64d45be73",
+      "high_power_switch"
+    ],
+    [
+      "8ddc5deb-f2f0-484e-8830-5c5b66c39d82",
+      "high_power_switch1"
+    ],
+    [
+      "d20af67b-cc13-4223-8baa-6cfee5ddb096",
+      "high_power_switch2"
+    ],
+    [
+      "a0fed137-583e-4701-859d-2f52eb6ce5f1",
+      "usbc_connector"
+    ],
+    [
+      "36a2e6d3-5151-4959-8dfc-22280691f9d7",
+      "DVEC_RJ47"
+    ],
+    [
+      "7ed2747a-fc85-465b-a860-0ca9b283a178",
+      "SPI Module6"
+    ],
+    [
+      "20d07f7c-292b-4e22-a270-13725250052d",
+      "DVEC_RJ46"
+    ],
+    [
+      "36a2e6d3-5151-4959-8dfc-22280691f9d7",
+      "DVEC_RJ47"
+    ],
+    [
+      "ec38761c-d843-479d-b7ab-dc349929834f",
+      "SPI Module7"
+    ],
+    [
+      "20d07f7c-292b-4e22-a270-13725250052d",
+      "DVEC_RJ46"
+    ],
+    [
+      "36a2e6d3-5151-4959-8dfc-22280691f9d7",
+      "DVEC_RJ47"
+    ],
+    [
+      "f60f3df6-5274-47f3-a027-2f9b8b58bfdf",
+      "GPGPIO Bank"
     ]
   ],
   "text_variables": {},

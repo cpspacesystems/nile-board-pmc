@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "WAGO 2601") (type "KiCad") (uri "${KIPRJMOD}/libraries/LIB_2601-1102/KiCad/2601-1102.kicad_sym") (options "") (descr ""))
 	(lib (name "lcsc_parts") (type "KiCad") (uri "${KIPRJMOD}/libraries/lcsc_parts.kicad_sym") (options "") (descr ""))
+	(lib (name "PI3C3306UEX") (type "KiCad") (uri "${KIPRJMOD}/libraries/LIB_PI3C3306UEX/KiCad/PI3C3306UEX.kicad_sym") (options "") (descr ""))
 )

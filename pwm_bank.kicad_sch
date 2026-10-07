@@ -1101,7 +1101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34dd310b-9762-4c35-8f74-db81e0f3f7aa")
-		(property "Reference" "J18"
+		(property "Reference" "J38"
 			(at 128.27 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1121,7 +1121,7 @@
 				)
 			)
 		)
-		(property "Footprint" "26011102"
+		(property "Footprint" "wago_2601_1102:26011102"
 			(at 137.16 155.88 0)
 			(hide yes)
 			(show_name no)
@@ -1240,20 +1240,79 @@
 				(justify left top)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 115.57 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S5.1" ""
+			(at 115.57 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 115.57 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 115.57 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 115.57 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
-			(uuid "cf6e3bcc-2417-4e2c-addd-290eb19882cd")
+			(uuid "fd9041b3-cd30-41f5-bb78-479451a9b28b")
 		)
 		(pin "2"
-			(uuid "4b95427d-856d-437b-babd-c2f549a1fa27")
+			(uuid "a61f91c3-59e3-47a0-8107-c28e995c7d92")
 		)
 		(pin "1"
-			(uuid "5cf9942f-b381-4b12-a8c7-6d537918fad1")
+			(uuid "dd27a81d-5a97-4d50-8b37-ff382ba52056")
 		)
 		(pin "3"
-			(uuid "875c61e5-188d-4a6f-958d-8774ee41b46d")
+			(uuid "46d1cb50-b83e-45a7-9069-8837029a4d02")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "J38")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "J18")
 					(unit 1)
@@ -1273,7 +1332,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e6adbec-cf6c-42dc-8dff-6f50524c6c0f")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR082"
 			(at 80.01 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -1328,10 +1387,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "17013f1a-98db-40d0-9a2c-525e24790796")
+			(uuid "71f371b2-5791-44bd-a72d-bdf7d3b9be26")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "#PWR082")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "#PWR063")
 					(unit 1)
@@ -1351,7 +1414,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b2d9bfe-9948-47c2-86f1-2027631a7b95")
-		(property "Reference" "JP3"
+		(property "Reference" "JP5"
 			(at 140.97 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1371,7 +1434,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels"
 			(at 140.97 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1426,17 +1489,54 @@
 				)
 			)
 		)
+		(property "KLC_S4.1" ""
+			(at 140.97 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 140.97 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 140.97 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
-			(uuid "30e40d7e-90fe-4182-8636-02131d3f4a42")
+			(uuid "703eb3c8-cfdd-4d7e-88f7-06ae15d2868f")
 		)
 		(pin "2"
-			(uuid "ce8ab083-5f5a-47df-b276-64db67c43a2e")
+			(uuid "9c1516ab-ab4e-4409-af43-268afdffdc40")
 		)
 		(pin "1"
-			(uuid "aa35d6be-381b-4c47-8793-6b479e75a21c")
+			(uuid "32e4ffe3-62fc-4351-a196-7d1541a14efc")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "JP5")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "JP3")
 					(unit 1)
@@ -1456,7 +1556,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d971a2a-a00c-4558-817e-068c7fd7fa28")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR084"
 			(at 138.43 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1512,10 +1612,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "36909f13-4a72-4824-95bc-b6b08e736cd1")
+			(uuid "118e046b-b921-4968-847d-087eb53e5c23")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "#PWR084")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "#PWR069")
 					(unit 1)
@@ -1535,7 +1639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6839b97f-e785-45bb-8408-d9b5ecb3797f")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR085"
 			(at 143.51 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1591,10 +1695,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e7017656-7f94-45e9-8f01-559f9b51660c")
+			(uuid "ef867ed8-85f5-452e-a3be-15ba52a642d6")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "#PWR085")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "#PWR071")
 					(unit 1)
@@ -1614,7 +1722,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "75858eac-7d03-4617-88c1-4a44241ce53a")
-		(property "Reference" "JP2"
+		(property "Reference" "JP4"
 			(at 54.61 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1634,7 +1742,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels"
 			(at 54.61 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1689,17 +1797,54 @@
 				)
 			)
 		)
+		(property "KLC_S4.1" ""
+			(at 54.61 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 54.61 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 54.61 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
-			(uuid "4d96839a-0b6f-46b7-a544-aa1bac3f0bf6")
+			(uuid "096edc89-58b0-48b7-84e2-bdd3b9ed8bda")
 		)
 		(pin "2"
-			(uuid "2f2afcfe-6a91-4d91-83e2-7a43757728de")
+			(uuid "89303cff-9ddb-46e7-8921-c6df4aad1c5d")
 		)
 		(pin "1"
-			(uuid "13e45984-3112-42d8-a441-31d20add176a")
+			(uuid "e1274d61-707c-4ec5-9467-9b82a21e2c9b")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "JP4")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "JP2")
 					(unit 1)
@@ -1719,7 +1864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7da2f847-54db-482f-b28e-0cffa7de21cf")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR081"
 			(at 57.15 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1775,10 +1920,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "c7eae725-eaa0-48ac-a874-ba428a2d440d")
+			(uuid "072bc1d7-a761-41f2-a56c-af0316251b6e")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "#PWR081")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "#PWR068")
 					(unit 1)
@@ -1798,7 +1947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b19c88f-7a21-4514-a261-37c995296ae1")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR080"
 			(at 52.07 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1854,10 +2003,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "01b43e67-6932-472c-86af-d4116377fe10")
+			(uuid "dabd3138-1c7d-4007-bff1-bc7a6af16313")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "#PWR080")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "#PWR066")
 					(unit 1)
@@ -1877,7 +2030,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba641b0d-890a-4c91-b7b0-a59c8eeb6906")
-		(property "Reference" "J16"
+		(property "Reference" "J19"
 			(at 67.31 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1897,7 +2050,7 @@
 				)
 			)
 		)
-		(property "Footprint" "26011102"
+		(property "Footprint" "wago_2601_1102:26011102"
 			(at 76.2 155.88 0)
 			(hide yes)
 			(show_name no)
@@ -2016,20 +2169,79 @@
 				(justify left top)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 54.61 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S5.1" ""
+			(at 54.61 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 54.61 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 54.61 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 54.61 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
-			(uuid "49ab0ad5-1bb1-4d03-8dbc-3f833fcc407e")
+			(uuid "d2a88bb0-e698-4147-8544-867d693f5b14")
 		)
 		(pin "2"
-			(uuid "475dbc6b-f7d7-492b-bd41-720960e3ead4")
+			(uuid "00f401ac-27a0-4b99-a50b-3a7d21dfd8dd")
 		)
 		(pin "1"
-			(uuid "0c54000e-e874-47c4-8b84-9fe03bbdd68c")
+			(uuid "e3e8a2a8-3f85-4ce6-891d-91867fa61374")
 		)
 		(pin "3"
-			(uuid "31bc96c6-be2a-4a81-8e28-477a91e3836f")
+			(uuid "59d2cc0e-75d4-4b7b-b821-6ffe7ad7b62a")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "J19")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "J16")
 					(unit 1)
@@ -2049,7 +2261,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7798fc7-3a55-440c-a776-cb610672d875")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR083"
 			(at 115.57 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -2104,10 +2316,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "caf11696-8556-430e-b9ad-c961b0606478")
+			(uuid "23850f6d-05aa-4edd-b354-e5b525ff671d")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "#PWR083")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "#PWR065")
 					(unit 1)
@@ -2127,7 +2343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f38d3363-c701-4849-862b-1b7c6f76ea39")
-		(property "Reference" "J17"
+		(property "Reference" "J37"
 			(at 97.79 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2147,7 +2363,7 @@
 				)
 			)
 		)
-		(property "Footprint" "26011102"
+		(property "Footprint" "wago_2601_1102:26011102"
 			(at 106.68 155.88 0)
 			(hide yes)
 			(show_name no)
@@ -2266,20 +2482,79 @@
 				(justify left top)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 85.09 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S5.1" ""
+			(at 85.09 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 85.09 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 85.09 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_VOUT" ""
+			(at 85.09 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
-			(uuid "8f999136-fdd5-4293-ab25-f91b27cb3929")
+			(uuid "5cd6faf6-e4bb-440d-b8ab-1205276b21b9")
 		)
 		(pin "2"
-			(uuid "fba5491c-6750-4426-8f70-9b6e686f8417")
+			(uuid "072077d2-8a3a-476b-b480-575d214a41b8")
 		)
 		(pin "1"
-			(uuid "6ada4da4-db7d-4caf-bcbd-9c646ed0a19b")
+			(uuid "35297d69-8a14-4e9c-bfe2-352c19b53ecd")
 		)
 		(pin "3"
-			(uuid "af3b23d8-0622-4a29-afee-1df2cb799454")
+			(uuid "483cf441-66c6-433f-a092-304b474c8d11")
 		)
 		(instances
 			(project "nile_pi_carrier"
+				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/5bf87c51-4b3c-40a4-bf13-8ac0a83be3aa"
+					(reference "J37")
+					(unit 1)
+				)
 				(path "/6981b83f-8333-411f-b27d-b24dc08c68e5/cde537bb-c97e-4e08-8399-576ddc2bd45e"
 					(reference "J17")
 					(unit 1)

@@ -1,0 +1,5 @@
+(version 1)
+(rule "Edge Clearance Override for USBC"
+	(condition "A.Reference == 'J7'")
+	(constraint edge_clearance (min 0.45mm))
+)

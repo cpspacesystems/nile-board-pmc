@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PI3C3306UEX
+D DIODES INC. - PI3C3306UEX - Bus Switch, 2 Channels, Bus Switch, 15 ohm, MSOP, 8 Pins
+K
+F https://www.diodes.com/assets/Datasheets/PI3C3305-3306.pdf
+$ENDCMP
+#
+#End Doc Library
